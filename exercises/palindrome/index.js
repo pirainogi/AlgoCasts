@@ -10,7 +10,24 @@
 function palindrome(str) {
   if(str.split('').reverse().join('') === str){
     return true
-  } return false 
+  } return false
 }
+
+// cleaned up version of the above
+
+// function palindrome(str) {
+//   const rev = str.split('').reverse().join('')
+//   return rev === str
+// }
+
+// using the .every()
+// compare every element in an ARRAY to the opposite element in the array
+// con: does more comparisons than necessary 
+
+// function palindrome(str) {
+//   return str.split('').every((char, i) => {
+//     return char === str[str.length - i - 1]
+//   })
+// }
 
 module.exports = palindrome;
