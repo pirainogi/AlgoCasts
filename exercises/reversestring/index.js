@@ -32,9 +32,11 @@ function reverse(str) {
 //   return reversed
 // }
 
-//
-function reversed(str){
+//turn string into an array
+//use reduce (arrow fn, initial value)
 
-}
+// function reversed(str){
+//   return str.split("").reduce((rev, char) => char + rev, "")
+// }
 
 module.exports = reverse;
