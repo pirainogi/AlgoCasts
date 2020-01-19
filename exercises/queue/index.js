@@ -18,7 +18,7 @@ class Queue {
     this.data.unshift(el)
   }
 
-  remove(el){
+  remove(){
     return this.data.pop()
   }
 
