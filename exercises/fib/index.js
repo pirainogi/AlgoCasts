@@ -24,7 +24,7 @@ function memoize(fn){
     if(cache[args]){
       return cache[args]
     }
-    
+
     const result = fn.apply(this, args)
     cache[args] = result
     return result
@@ -38,6 +38,6 @@ function fib2(n){
   return fib2(n-1) + fib(n-2)
 }
 
-const fib3 = memoize(fib2)
+fib2 = memoize(fib2)
 
 module.exports = fib;
