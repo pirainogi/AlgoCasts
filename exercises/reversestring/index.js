@@ -24,13 +24,13 @@ function reverse(str) {
 //take the last char of the orig string and add to the start of the new string
 //return the reversed string
 
-// function reverse(str) {
-//   let reversed = ''
-//   for (let char of str){
-//     reversed = char + reversed
-//   }
-//   return reversed
-// }
+function reverse2(str) {
+  let reversed = ''
+  for (let char of str){
+    reversed = char + reversed
+  }
+  return reversed
+}
 
 //turn string into an array
 //use reduce (arrow fn, initial value)
